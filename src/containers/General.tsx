@@ -28,7 +28,6 @@ export default function General() {
         <div className="general">
             {!loading ? (
                 <>
-                    <h1>General</h1>
                     <div className="small-ad-container">
                         {ads.map((ad: any, index) => (
                             <SmallAd key={index} ad={ad} />

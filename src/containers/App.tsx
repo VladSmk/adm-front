@@ -4,6 +4,7 @@ import Navbar from "../layout/Navbar";
 import General from "./General";
 import FullScreenAd from "../blocks/FullScreenAd";
 import Loading from "../blocks/Loading";
+import About from "./About";
 
 function App() {
     return (
@@ -14,7 +15,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<General />} />
                         <Route path="/ad/:id" element={<AdWrapper />} />
-                        <Route path="/about" element={<Loading />} />
+                        <Route path="/about" element={<About />} />
                         <Route path="/contact" element={<Loading />} />
                     </Routes>
                 </div>
