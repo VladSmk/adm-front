@@ -1,0 +1,38 @@
+.navbar {
+    background-color: #1a6ed1;
+    padding: 1rem 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    text-decoration: underline;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links .nav-link {
+    color: #ffffff;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.navbar-links .nav-link:hover {
+    text-decoration: underline;
+}
