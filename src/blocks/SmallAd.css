@@ -4,16 +4,13 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 16px;
     margin-bottom: 16px;
-    width: calc(100% / 3 - 16px);
     flex: 1 0 calc(100% / 3 - 16px);
     box-sizing: border-box;
     transition: transform 0.3s ease;
-    text-decoration: none;
-    color: inherit;
 }
 
 .small-ad:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 .ad-image img {
@@ -32,7 +29,6 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 8px;
-    color: #333;
 }
 
 .ad-description {
@@ -48,17 +44,27 @@
     padding: 8px;
 }
 
-.ad-link {
+.ad-link, .ad-title-link {
     color: #1a6ed1;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.ad-link:hover {
+.ad-link:hover, .ad-title-link:hover {
     text-decoration: underline;
 }
 
 .ad-time {
     font-size: 0.875rem;
     color: #999999;
+}
+
+.small-ad-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.small-ad:nth-last-child(-n+2) {
+    margin-left: auto;
 }

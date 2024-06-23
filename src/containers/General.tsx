@@ -3,7 +3,7 @@ import axios from "axios";
 import Loading from "../blocks/Loading";
 import ServerDomain from "../const/ServerDomain";
 import SmallAd from "../blocks/SmallAd";
-import './General.css'; 
+import './General.css';
 
 export default function General() {
     const [loading, setLoading] = useState(true);
@@ -11,7 +11,7 @@ export default function General() {
 
     const findAllAds = async () => {
         try {
-            const response = await axios.get(ServerDomain() + "/ad-monitor-api/findAllAds");
+            const response = await axios.get(ServerDomain() + "/ad-monitor-api/findAllAdDTOs");
             setAds(response.data);
             setLoading(false);
         } catch (error) {
